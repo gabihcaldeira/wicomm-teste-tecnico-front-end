@@ -18,11 +18,18 @@ export const InfoHeader = styled.section`
   }
 
   .--bold {
-    font-weight: 700;
     margin-right: 32px;
+
+    font-weight: 700;
+    text-decoration: underline;
+
     display: flex;
     align-items: center;
     gap: 8px;
+
+    .infoHeader_icon {
+      font-size: 14.13px;
+    }
   }
 `;
 
