@@ -1,9 +1,12 @@
 import { createGlobalStyle } from "styled-components";
+import AktivGroteskRegular from "../fonts/AktivGroteskRegular.ttf";
+import AktivGroteskBold from "../fonts/AktivGroteskBold.ttf";
 
 export default createGlobalStyle`
     :root{
         --color-white: #FFFFFF;
         --color-detail: #aa8232;
+        --color-ad-background: #d5b69a;
         --color-header: #FDFDFD; 
         --color-red: #b90032;
         --color-beige: #E1DCD5; //search-bar and footer
@@ -16,6 +19,7 @@ export default createGlobalStyle`
         --color-detail-2: #009baa;
         --color-carousel: #bdbdbd;
         --color-dark-blue: #00002D;
+        --color-light-grey: #828282;
         
 
         
@@ -30,13 +34,16 @@ export default createGlobalStyle`
 
         @font-face {
             font-family: Aktiv;
-            src: url('src/assets/fonts/AktivGrotesk-Regular.ttf');
+            font-style: normal;
+            src: url(${AktivGroteskRegular});
+            font-weight: 400;
         }
 
         @font-face {
             font-family: Aktiv;
-            src: url('src/assets/fonts/AktivGrotesk-Bold.ttf');
-            font-weight: bold;
+            font-style: normal;
+            src: url(${AktivGroteskBold});
+            font-weight: 700;
         }
     }
 
@@ -61,6 +68,11 @@ export default createGlobalStyle`
         background: none;
         border: none;
 
+    }
+
+    input:focus{
+        border: none;
+        outline: none;
     }
 
     figcaption{

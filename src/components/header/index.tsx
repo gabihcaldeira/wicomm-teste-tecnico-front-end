@@ -5,7 +5,6 @@ import {
   RiHeart3Line,
   RiShoppingBagLine,
 } from "react-icons/ri";
-import logoHinode from "../../assets/logo-grupo-hinode.svg";
 import SearchBar from "../form";
 
 function Header() {
@@ -25,7 +24,7 @@ function Header() {
       <MainHeader>
         <figure>
           <img
-            src={logoHinode}
+            src="assets/logo-grupo-hinode.svg"
             alt="Logo Grupo Hinode"
             className="mainHeader_logo"
           />

@@ -1,7 +1,7 @@
 import { Button } from "./style";
 
 function BuyButton() {
-  return <Button>COMPRAR</Button>;
+  return <Button className="buyButton">COMPRAR</Button>;
 }
 
 export default BuyButton;
