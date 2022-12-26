@@ -2,22 +2,44 @@ import styled from "styled-components";
 
 export const Card = styled.div`
   width: 266px;
-  height: 540.94px;
-  padding-bottom: 21.94px;
+  height: 519px;
+  padding: 0;
 
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   .container {
     width: 266px;
     height: 311px;
-    padding-top: 16px;
 
     background-color: var(--color-card);
     border: 0.5px solid var(--color-card-border);
 
     position: relative;
 
+    .container_discountFlag {
+      width: 42px;
+      height: 28px;
+
+      background-color: var(--color-detail);
+      color: var(--color-white);
+
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 28px;
+      text-align: center;
+
+      position: absolute;
+      top: 20px;
+      left: -7px;
+    }
+
     .container_likeButton {
       position: absolute;
       right: 16px;
+      top: 16px;
 
       .likeButton_icon {
         font-size: 21px;
@@ -25,17 +47,21 @@ export const Card = styled.div`
     }
 
     .container_figure {
+      width: 266px;
+      height: 311px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       .figure_product {
-        width: 267px;
-        height: 271px;
-
-        position: absolute;
+        transition: transform 1s ease-in-out;
       }
     }
   }
 
   .product_description {
     margin-top: 16px;
+    white-space: nowrap;
+    overflow: scroll;
   }
 
   .product_description,
@@ -56,12 +82,12 @@ export const Card = styled.div`
     }
   }
 
-  @font-face {
-    font-family: Aktiv;
-    src: url("src/assets/fonts/AktivGrotesk-Bold.ttf");
-    font-weight: bold;
-  }
+  .product_oldPrice {
+    color: var(--color-light-grey);
 
+    font-size: 14px;
+    text-decoration: line-through;
+  }
   .product_price {
     font-family: Aktiv;
     font-weight: bold;
@@ -74,7 +100,11 @@ export const Card = styled.div`
       font-size: 14px;
 
       position: absolute;
-      top: -5px;
+      top: -7px;
     }
+  }
+
+  :hover > .container > .container_figure > .figure_product {
+    transform: scale(1.2);
   }
 `;
