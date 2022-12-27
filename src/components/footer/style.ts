@@ -7,11 +7,15 @@ export const FooterSection = styled.section`
     padding: 71px 151px;
 
     display: flex;
-    gap: 89px;
+    gap: 95px;
 
     .section_div {
       display: flex;
       flex-direction: column;
+
+      :nth-child(2) {
+        margin: 0px 14px 0px 61px;
+      }
 
       .div_title,
       .div_button {

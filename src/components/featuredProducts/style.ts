@@ -2,10 +2,7 @@ import styled from "styled-components";
 
 export const FeaturedSection = styled.section`
   height: 833px;
-
-  display: flex;
-  justify-content: center;
-  gap: 24px;
+  padding: 0px 153px 0px 150px;
 
   position: relative;
 
@@ -14,20 +11,15 @@ export const FeaturedSection = styled.section`
     color: var(--color-carousel);
 
     position: absolute;
-    top: 359px;
+    top: -65px;
   }
 
   .--left {
-    left: 20px;
+    left: -115px;
   }
 
   .--right {
-    right: 20px;
-  }
-
-  .carouselIndicator {
-    position: absolute;
-    bottom: 0px;
+    right: -115px;
   }
 `;
 

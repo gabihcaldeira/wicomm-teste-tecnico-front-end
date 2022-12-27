@@ -4,7 +4,7 @@ export const Button = styled.button`
   width: 268px;
   height: 58px;
 
-  background-color: var(--color-white);
+  background-color: transparent;
   color: var(--color-buy-button);
   border: 2px solid var(--color-buy-button);
 

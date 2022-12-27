@@ -57,27 +57,4 @@ export const AdCarousel = styled.section`
     background-color: var(--color-white);
     color: var(--color-ad-background);
   }
-
-  .ad_arrowButton {
-    font-size: 80px;
-
-    color: var(--color-white);
-
-    position: absolute;
-    top: 355px;
-  }
-
-  .--left {
-    left: 30px;
-  }
-
-  .--right {
-    right: 30px;
-  }
-
-  .carouselIndicator {
-    position: absolute;
-    bottom: 22px;
-    left: 647px;
-  }
 `;

@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const CarouselContainer = styled.section`
   height: 667px;
-  padding: 0px 20px;
   margin-top: 96px;
 
   position: relative;
@@ -30,30 +29,27 @@ export const CarouselContainer = styled.section`
   }
 
   .carousel_content {
-    display: flex;
-    align-items: center;
+    width: 1440px;
+    height: 519px;
+    margin: 50px auto 40px;
+    padding: 0px 151px 0px 150px;
+
     position: relative;
-
-    .carousel_cards {
-      width: 1140px;
-      height: 519px;
-      margin: 50px auto 40px;
-
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
 
     .carousel_arrowButton {
       font-size: 75px;
       color: var(--color-carousel);
 
       position: absolute;
-      top: 239px;
+      top: -150px;
+    }
+
+    .--left {
+      left: -113px;
     }
 
     .--right {
-      right: 20px;
+      right: -113px;
     }
 
     .carouselIndicator {

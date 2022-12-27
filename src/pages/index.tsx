@@ -26,7 +26,7 @@ function HomePage() {
 
       <ProductsCarousel title="mais vendidos">
         {products
-          .filter(({ section }) => section === "best sellers")
+          .filter(({ id }) => id <= 8 && id !== 5 && id !== 6)
           .map((product: IProduct) => (
             <ProductCard {...product} />
           ))}
@@ -38,7 +38,7 @@ function HomePage() {
 
       <ProductsCarousel title="os mais desejados">
         {products
-          .filter(({ section }) => section === "most wanted")
+          .filter(({ id }) => id >= 7 && id < 11)
           .map((product: IProduct) => (
             <ProductCard {...product} />
           ))}
@@ -46,7 +46,7 @@ function HomePage() {
 
       <ProductsCarousel title="vida saudável">
         {products
-          .filter(({ section }) => section === "healthy life")
+          .filter(({ id }) => id >= 11 && id < 15)
           .map((product: IProduct) => (
             <ProductCard {...product} />
           ))}
@@ -57,7 +57,6 @@ function HomePage() {
       <ProductsCarousel title="corpo e banho">
         {products
           .filter(({ section }) => section === "body and bath")
-          .splice(0, 4)
           .map((product: IProduct) => (
             <ProductCard {...product} />
           ))}
@@ -76,7 +75,6 @@ function HomePage() {
       <ProductsCarousel title="fragrâncias">
         {products
           .filter(({ section }) => section === "fragrance")
-          .splice(0, 4)
           .map((product: IProduct) => (
             <ProductCard {...product} />
           ))}
