@@ -11,6 +11,7 @@ import FeaturedProducts from "../components/featuredProducts";
 import BodyBathCategory from "../components/bodyAndBathSection";
 import FragranceCategoryAd from "../components/fragranceAd";
 import NewProducts from "../components/newProducts";
+import Footer from "../components/footer";
 
 function HomePage() {
   return (
@@ -90,6 +91,8 @@ function HomePage() {
       </ProductsCarousel>
 
       <NewProducts />
+
+      <Footer />
     </div>
   );
 }
