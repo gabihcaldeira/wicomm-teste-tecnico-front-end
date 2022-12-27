@@ -20,6 +20,8 @@ export default createGlobalStyle`
         --color-carousel: #bdbdbd;
         --color-dark-blue: #00002D;
         --color-light-grey: #828282;
+        --color-just-arrived: #F8F8F8;
+
         
 
         

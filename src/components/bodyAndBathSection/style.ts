@@ -37,5 +37,12 @@ export const BodySection = styled.section`
     font-size: 11.71px;
     line-height: 17.96px;
     text-transform: uppercase;
+
+    transition: color 0.8s ease-in-out, background-color 0.8s ease-in-out;
+
+    :hover {
+      color: var(--color-ad-background);
+      background-color: var(--color-white);
+    }
   }
 `;

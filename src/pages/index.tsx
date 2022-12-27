@@ -9,6 +9,8 @@ import { products, IProduct } from "../database/data";
 import MenuByCategory from "../components/menuByCategory";
 import FeaturedProducts from "../components/featuredProducts";
 import BodyBathCategory from "../components/bodyAndBathSection";
+import FragranceCategoryAd from "../components/fragranceAd";
+import NewProducts from "../components/newProducts";
 
 function HomePage() {
   return (
@@ -59,7 +61,7 @@ function HomePage() {
             <ProductCard {...product} />
           ))}
       </ProductsCarousel>
-      <ProductsCarousel title="">
+      <ProductsCarousel>
         {products
           .filter(({ section }) => section === "body and bath")
           .splice(4, 8)
@@ -67,6 +69,27 @@ function HomePage() {
             <ProductCard {...product} />
           ))}
       </ProductsCarousel>
+
+      <FragranceCategoryAd />
+
+      <ProductsCarousel title="fragrâncias">
+        {products
+          .filter(({ section }) => section === "fragrance")
+          .splice(0, 4)
+          .map((product: IProduct) => (
+            <ProductCard {...product} />
+          ))}
+      </ProductsCarousel>
+      <ProductsCarousel>
+        {products
+          .filter(({ section }) => section === "fragrance")
+          .splice(4, 8)
+          .map((product: IProduct) => (
+            <ProductCard {...product} />
+          ))}
+      </ProductsCarousel>
+
+      <NewProducts />
     </div>
   );
 }

@@ -5,7 +5,7 @@ import {
   RiHeart3Line,
   RiShoppingBagLine,
 } from "react-icons/ri";
-import SearchBar from "../form";
+import SearchBar from "../searchForm";
 
 function Header() {
   return (
