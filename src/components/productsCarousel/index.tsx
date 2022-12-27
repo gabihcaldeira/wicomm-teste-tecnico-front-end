@@ -6,18 +6,22 @@ import { SectionTitle } from "../sectionTitle/style";
 
 interface IProductCarouselProps {
   children: React.ReactNode;
-  title: string;
+  title?: string;
 }
 
 function ProductsCarousel({ children, title }: IProductCarouselProps) {
   return (
     <CarouselContainer>
-      <SectionTitle className="carousel_title">{title}</SectionTitle>
+      {title && (
+        <>
+          <SectionTitle className="carousel_title">{title}</SectionTitle>
 
-      <button className="carousel_moreButton">
-        <RiEyeLine className="moreButton_icon" />
-        Ver todos
-      </button>
+          <button className="carousel_moreButton">
+            <RiEyeLine className="moreButton_icon" />
+            Ver todos
+          </button>
+        </>
+      )}
 
       <div className="carousel_content">
         <button className="carousel_arrowButton --left">

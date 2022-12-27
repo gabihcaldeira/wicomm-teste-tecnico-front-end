@@ -31,8 +31,10 @@ export const CategoryCard = styled.button`
 
   .card_title {
     color: var(--color-white);
+
     font-size: 31.94px;
     line-height: 34.42px;
+    white-space: pre;
   }
 
   .card_text {

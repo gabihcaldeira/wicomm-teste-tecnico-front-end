@@ -32,6 +32,7 @@ export const CarouselContainer = styled.section`
   .carousel_content {
     display: flex;
     align-items: center;
+    position: relative;
 
     .carousel_cards {
       width: 1140px;
@@ -42,23 +43,23 @@ export const CarouselContainer = styled.section`
       align-items: center;
       justify-content: space-between;
     }
-  }
 
-  .carousel_arrowButton {
-    font-size: 75px;
-    color: var(--color-carousel);
+    .carousel_arrowButton {
+      font-size: 75px;
+      color: var(--color-carousel);
 
-    position: absolute;
-    top: 239px;
-  }
+      position: absolute;
+      top: 239px;
+    }
 
-  .--right {
-    right: 20px;
-  }
+    .--right {
+      right: 20px;
+    }
 
-  .carouselIndicator {
-    position: absolute;
-    bottom: 0;
-    right: 649px;
+    .carouselIndicator {
+      position: absolute;
+      bottom: 0;
+      right: 649px;
+    }
   }
 `;

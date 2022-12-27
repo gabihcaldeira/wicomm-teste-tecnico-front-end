@@ -108,7 +108,7 @@ export const products = [
     price: 25.0,
     discount_price: null,
     img: "assets/os-mais-desejados-luva-de-silicone-creme.svg",
-    section: " most wanted",
+    section: "most wanted",
   },
   {
     id: 11,

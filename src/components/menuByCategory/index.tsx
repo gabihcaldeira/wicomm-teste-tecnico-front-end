@@ -23,14 +23,14 @@ function MenuByCategory() {
 
         <CategoryCard itemProp="assets/menu-energia-performance-homem-bebendo.svg">
           <SectionTitle className="card_title">
-            energia & performance
+            energia &{"\n"}performance
           </SectionTitle>
 
           <SectionTitle className="card_text">ver mais</SectionTitle>
         </CategoryCard>
 
         <CategoryCard itemProp="assets/menu-corpo-banho-pele-com-creme.svg">
-          <SectionTitle className="card_title">corpo & banho</SectionTitle>
+          <SectionTitle className="card_title">corpo &{"\n"}banho</SectionTitle>
 
           <SectionTitle className="card_text">ver mais</SectionTitle>
         </CategoryCard>
