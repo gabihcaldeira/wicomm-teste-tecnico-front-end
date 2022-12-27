@@ -41,6 +41,14 @@ export const FooterSection = styled.section`
         padding: 15px 30px;
         background-color: var(--color-detail-2);
         color: var(--color-white);
+        border: 2px solid var(--color-detail-2);
+
+        transition: background-color 0.8s ease-in-out, color 0.8s ease-in-out;
+
+        :hover {
+          background-color: var(--color-white);
+          color: var(--color-detail-2);
+        }
       }
 
       .div_contactInfo {

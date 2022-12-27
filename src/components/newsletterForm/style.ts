@@ -42,7 +42,6 @@ export const NewsSection = styled.section`
 
       ::placeholder {
         color: var(--color-white);
-        //font-size: 14px;
       }
     }
 
@@ -58,11 +57,19 @@ export const NewsSection = styled.section`
 
       background-color: var(--color-detail-2);
       color: var(--color-white);
+      border: 2px solid var(--color-detail-2);
 
       font-weight: 700;
       font-size: 11.71px;
       line-height: 18px;
       text-transform: uppercase;
+
+      transition: background-color 0.8s ease-in-out, color 0.8s ease-in-out;
+
+      :hover {
+        background-color: var(--color-white);
+        color: var(--color-detail-2);
+      }
     }
   }
 `;
