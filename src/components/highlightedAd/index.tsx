@@ -2,6 +2,7 @@ import { AdCarousel } from "./style";
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
 import CarouselIndicator from "../carouselIndicator";
 import BuyButton from "../buyButton";
+import { AdTitle } from "../adTitle/style";
 
 function HighlightedAd() {
   return (
@@ -24,9 +25,9 @@ function HighlightedAd() {
         <figcaption>Modelo se maquiando</figcaption>
       </figure>
 
-      <h1 className="ad_title">
+      <AdTitle className="ad_title">
         Base Líquida <span className="title_span">Dazzle</span>
-      </h1>
+      </AdTitle>
 
       <BuyButton />
 

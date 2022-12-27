@@ -7,6 +7,7 @@ import ProductCard from "../components/productCard";
 
 import { products } from "../database/data";
 import { IProduct } from "../interfaces";
+import MenuByCategory from "../components/menuByCategory";
 
 function HomePage() {
   return (
@@ -22,6 +23,7 @@ function HomePage() {
             <ProductCard {...product} />
           ))}
       </ProductsCarousel>
+      <MenuByCategory />
     </div>
   );
 }

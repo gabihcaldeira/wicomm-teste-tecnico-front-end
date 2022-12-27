@@ -31,10 +31,6 @@ export const AdCarousel = styled.section`
   .ad_title {
     width: 550px;
 
-    font: normal 700 92.15px/70px var(--font-playfair);
-    letter-spacing: -3.54px;
-
-    position: absolute;
     top: 192px;
     right: 48px;
 

@@ -2,6 +2,7 @@ import React from "react";
 import { CarouselContainer } from "./style";
 import { RiEyeLine, RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
 import CarouselIndicator from "../carouselIndicator";
+import { SectionTitle } from "../sectionTitle/style";
 
 interface IProductCarouselProps {
   children: React.ReactNode;
@@ -11,7 +12,7 @@ interface IProductCarouselProps {
 function ProductsCarousel({ children, title }: IProductCarouselProps) {
   return (
     <CarouselContainer>
-      <h2 className="carousel_title">{title}</h2>
+      <SectionTitle className="carousel_title">{title}</SectionTitle>
 
       <button className="carousel_moreButton">
         <RiEyeLine className="moreButton_icon" />

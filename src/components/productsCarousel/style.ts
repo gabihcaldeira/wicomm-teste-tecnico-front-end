@@ -6,14 +6,6 @@ export const CarouselContainer = styled.section`
   margin-top: 96px;
 
   position: relative;
-  .carousel_title {
-    font: 300 46px/70px var(--font-oswald);
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    text-align: center;
-
-    color: var(--color-black);
-  }
 
   .carousel_moreButton {
     font-weight: 600;
