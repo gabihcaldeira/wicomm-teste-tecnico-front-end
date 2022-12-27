@@ -37,7 +37,6 @@ export const FooterSection = styled.section`
       }
 
       .--button_blue {
-        width: 221px;
         padding: 15px 30px;
         background-color: var(--color-detail-2);
         color: var(--color-white);
