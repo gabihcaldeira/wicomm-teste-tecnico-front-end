@@ -1,11 +1,10 @@
 import { Card } from "./style";
 import { RiHeart3Line } from "react-icons/ri";
 import BuyButton from "../buyButton";
-import { IProduct } from "../../interfaces";
+import { IProduct } from "../../database/data";
 
 function ProductCard(product: IProduct) {
-  const { id, title, category, quantity, price, discount_price, img, section } =
-    product;
+  const { title, quantity, price, discount_price, img } = product;
   return (
     <Card>
       <div className="container">
@@ -26,7 +25,7 @@ function ProductCard(product: IProduct) {
       <p className="product_description">{title}</p>
       <p className="product_quantity">{quantity}</p>
       <div className="product_rating">
-        <img src="assets/estrelas-avaliacao.svg" alt="teste" />
+        <img src="assets/estrelas-avaliacao.svg" alt="avaliação do produto" />
       </div>
 
       {discount_price ? (

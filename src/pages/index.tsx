@@ -5,9 +5,9 @@ import PaymentInfoBar from "../components/paymentInfo";
 import ProductsCarousel from "../components/productsCarousel";
 import ProductCard from "../components/productCard";
 
-import { products } from "../database/data";
-import { IProduct } from "../interfaces";
+import { products, IProduct } from "../database/data";
 import MenuByCategory from "../components/menuByCategory";
+import FeaturedProducts from "../components/featuredProducts";
 
 function HomePage() {
   return (
@@ -24,6 +24,7 @@ function HomePage() {
           ))}
       </ProductsCarousel>
       <MenuByCategory />
+      <FeaturedProducts />
     </div>
   );
 }

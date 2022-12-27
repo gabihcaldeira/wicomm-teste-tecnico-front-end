@@ -25,6 +25,7 @@ export default createGlobalStyle`
         
         --shadow-main-header: 0px 4px 10px rgba(0, 0, 0, 0.08);
         --shadow-buy-info: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        --shadow-featured-info: 0px 4px 14px rgba(0, 0, 0, 0.25);
         
         --font-open: 'Open Sans', sans-serif;
         --font-oswald: 'Oswald', sans-serif;
