@@ -25,7 +25,7 @@ function ProductCard(product: IProduct) {
       <p className="product_description">{title}</p>
       <p className="product_quantity">{quantity}</p>
       <div className="product_rating">
-        <img src="assets/estrelas-avaliacao.svg" alt="avaliação do produto" />
+        <img src="assets/avaliacao-4-estrelas.svg" alt="avaliação do produto" />
       </div>
 
       {discount_price ? (

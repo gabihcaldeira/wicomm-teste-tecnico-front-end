@@ -20,7 +20,7 @@ function FeaturedProducts() {
               <p className="product_quantity">{quantity}</p>
               <div className="product_rating">
                 <img
-                  src="assets/estrelas-avaliacao.svg"
+                  src="assets/avaliacao-5-estrelas.svg"
                   alt="avaliação do produto"
                   className="rating_img"
                 />
